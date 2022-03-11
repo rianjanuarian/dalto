@@ -56,7 +56,7 @@ const Tabuler = () => {
                         <div className="font-semibold text-left">Nama</div>
                       </th>
                       <th className="p-2 whitespace-nowrap">
-                        <div className="font-semibold text-left">Pegirim</div>
+                        <div className="font-semibold text-left">Pengirim</div>
                       </th>
                       <th className="p-2 whitespace-nowrap">
                         <div className="font-semibold text-left">Penerima</div>

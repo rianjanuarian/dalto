@@ -13,7 +13,7 @@ const Header = () => {
         <span>A12</span>
       </div>
       <nav className="flex flex-row justify-center items-center list-none">
-        <li className="cursor-pointer mr-3 hover:text-blue-500"></li>
+        <li className="cursor-pointer mr-3 hover:text-blue-500">converter</li>
         <li className="cursor-pointer mr-3 hover:text-blue-500"></li>
         <li className="cursor-pointer mr-3">
           <button

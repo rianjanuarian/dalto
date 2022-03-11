@@ -40,7 +40,7 @@ const AddTransactionCard = () => {
       <div className="bg-white rounded-xl w-1/3 h-7/12 p-6">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
-            <p className="font-semibold text-gray-800">Add a step</p>
+            <p className="font-semibold text-gray-800">Kirim Uang</p>
             <button
               onClick={() => setGlobalState('modal', '')}
               className="border-0 bg-transparent focus:outline-none"
