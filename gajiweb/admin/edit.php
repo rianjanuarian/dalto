@@ -210,7 +210,7 @@ $data  = mysqli_fetch_array($query);
     <form action="update.php" method="post">
     <table class="table table-condensed">
     <tr>
-        <td><label for="kary_id">Kode Karyawan</label></td>
+        <td><label for="kary_id">Id Karyawan</label></td>
         <td><input name="kary_id" type="text" class="form-control" id="kary_id" value="<?php echo $data['kary_id'];?>" readonly="readonly"/></td>
       </tr>
       <tr>
