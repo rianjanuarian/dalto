@@ -19,6 +19,7 @@ if (empty($_SESSION['username'])){
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
+   
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- Page Specific CSS -->
@@ -29,6 +30,7 @@ var jam_lembur = document.transfer.jam_lembur.value;
 var uang_lembur = document.transfer.uang_lembur.value;
 var gaji_utama = document.transfer.gaji_utama.value;
 var total_gaji = document.transfer.total_gaji.value;
+var total_gajiusd = document.transfer.total_gajiusd.value;
 var sanksi = document.transfer.sanksi.value;
 uang_lembur = ( 50000 ) * jam_lembur;
 document.transfer.uang_lembur.value = Math.floor( uang_lembur );
@@ -171,14 +173,19 @@ if (isset($_SESSION['start_time'])) {
         echo "<script>alert('Session Anda Telah Habis!'); window.location = '$logout_redirect_url'</script>";
     }
 }
+
+
 $_SESSION['start_time'] = time();
+
 ?>
 <?php } ?>
+
       <div id="page-wrapper">
 
         <div class="row">
           <div class="col-lg-12">
             <h1>Hitung Lembur Karyawan <small>Admin</small></h1>
+            
             <ol class="breadcrumb">
               <li class="active"><i class="fa fa-edit"> Hitung Lembur Karyawan</i></li>
             </ol>
@@ -193,8 +200,10 @@ $_SESSION['start_time'] = time();
             <div class="alert alert-success alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
              Anda Berada Di Halaman Perhitungan Lembur Karyawan
+
           </div>
-        </div><!-- /.row -->
+        </div>
+    <!-- /.row -->
 <!--
         <div class="row">
           <div class="col-lg-12">
@@ -209,6 +218,27 @@ $_SESSION['start_time'] = time();
           </div>
         </div>-->
         <!-- /.row -->
+
+        <!-- konverter uang -->
+        <div class="container-float">
+        <h3>Konverter</h3>
+        <div class="box">
+            <div class="left_box">
+                <select name="currency" class="currency"></select>
+                <input type="number" name="" id="num">
+            </div>
+            <div class="right_box">
+                <select name="currency" class="currency"></select>
+                <input type="text" name="" id="ans" disabled>
+            </div>
+        </div>
+        <button class="btn" id="btn">Convert</button>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- konverter eth -->
+
+    <!-- hitung lembur karyawan -->
         <div class="col-lg-12">
             <div class="panel panel-primary">
               <div class="panel-heading">
@@ -262,6 +292,12 @@ $data  = mysqli_fetch_array($query);
         <td><input name="total_gaji" type="text" class="form-control" id="total_gaji" required/></td>
       </tr>
       <tr>
+        <td><label for="total_gaji">Total Gaji (USD)</label></td>
+        <td><input name="total_gajiusd" type="text" class="form-control" id="total_gajiusd" required/></td>
+      </tr>
+
+      
+      <tr>
         <td><label for="bulan_transfer">Bulan Transfer</label></td>
         <td><select name="bulan_transfer" name="bulan_transfer" id="bulan_transfer" class="form-control" required>
         <option></option>
@@ -288,8 +324,9 @@ $data  = mysqli_fetch_array($query);
         <td><input name="jam_transfer" type="text" class="form-control" id="jam_transfer" value="<?php echo "".date("H:i:s").""?>" readonly="readonly"/></td>
       </tr>
       <tr>
-        <td><input type="submit" value="Simpan Data"  class="btn btn-sm btn-primary"/>&nbsp;<a href="index.php" class="btn btn-sm btn-primary">Kembali</a></td>
+        <td><input type="submit" value="Simpan Data"  class="btn btn-sm btn-primary"/>&nbsp;<a href="index.php" class="btn btn-sm btn-primary">Kembali</a>&nbsp;<a href="http://localhost/dalto/gajiweb/konvertereth/index.html" class="btn btn-sm btn-primary">Converter</a></td>
         </tr>
+        
     </table>
     </form>
                    </div>

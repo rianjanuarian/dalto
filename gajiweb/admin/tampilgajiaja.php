@@ -215,7 +215,7 @@ $_SESSION['start_time'] = time();
                  <div class="table-responsive">
                     <?php
                     $tampil=mysqli_query($konek,"SELECT karyawan.kode_kar, karyawan.nama_kar, karyawan.no_rek, karyawan.gaji_utama, tb_gaji.kode_gaji, 
-                    tb_gaji.uang_lembur,tb_gaji.sanksi, tb_gaji.total_gaji, tb_gaji.tgl_transfer, tb_gaji.jam_transfer FROM karyawan, tb_gaji WHERE karyawan.kary_id=tb_gaji.kary_id");
+                    tb_gaji.uang_lembur,tb_gaji.sanksi, tb_gaji.total_gaji,tb_gaji.total_gajiusd, tb_gaji.tgl_transfer, tb_gaji.jam_transfer FROM karyawan, tb_gaji WHERE karyawan.kary_id=tb_gaji.kary_id");
                     $total=mysqli_num_rows($tampil); ?>
                   <table class="table table-bordered table-hover table-striped tablesorter">
                   
@@ -227,7 +227,8 @@ $_SESSION['start_time'] = time();
                         <th>Gaji Utama <i class="fa fa-sort"></i></th>
                         <th>Uang_lembur <i class="fa fa-sort"></i></th>
                         <th>Sanksi <i class="fa fa-sort"></i></th>
-                        <th>Take Home Pay <i class="fa fa-sort"></i></th>
+                        <th>Total gaji <i class="fa fa-sort"></i></th>
+                        <th>Total gaji (USD) <i class="fa fa-sort"></i></th>
                         <th>Tanggal Transfer <i class="fa fa-sort"></i></th>
                         <th>Jam Transfer <i class="fa fa-sort"></i></th>
                       </tr>
@@ -243,6 +244,7 @@ $_SESSION['start_time'] = time();
                     <td>Rp.<?php echo number_format($data['uang_lembur'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['sanksi'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['total_gaji'],2,",",".");?></td>
+                    <td>USD.<?php echo number_format($data['total_gajiusd'],2,",",".");?></td>
                     <td><?php echo $data['tgl_transfer'];?></td>
                     <td><?php echo $data['jam_transfer']; ?></td>
                     </tr>
@@ -254,7 +256,7 @@ $_SESSION['start_time'] = time();
                    </div>
                 <div class="text-right">
                   <!-- <a href="#" class="btn btn-sm btn-warning" onclick="window.print();return false"><i class="fa fa-print"></i> Cetak Data</a> -->
-                  <a href="https://www.google.co.id/search?q=idr+to+eth&sxsrf=APq-WBvcTbVMMgSXy30ki5NvDKrpBkjZxQ%3A1646901730829&source=hp&ei=4rkpYoqkMITFmAXvxLzYCA&iflsig=AHkkrS4AAAAAYinH8vUD8mLc2eoGGxEuImn5e_-1wnKN&ved=0ahUKEwiKnZOFk7v2AhWEIqYKHW8iD4sQ4dUDCAY&uact=5&oq=idr+to+eth&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBMgUIABDLATIFCAAQywEyBggAEBYQHjoECCMQJzoLCAAQgAQQsQMQgwE6BQguEIAEOggIABCABBCxAzoICAAQsQMQgwE6BQgAEIAEOggILhCABBCxAzoLCC4QgAQQsQMQgwE6CQgjECcQRhCCAjoICAAQFhAKEB5QBVj_GWCAHGgAcAB4AYABsAKIAZEIkgEHOS4xLjAuMZgBAKABAbABAA&sclient=gws-wiz" class="btn btn-sm btn-warning" ><i class="fa fa-exchange"> </i> Converter</a>
+                  <a href="http://localhost/dalto/gajiweb/konvertereth/index.html" class="btn btn-sm btn-warning" ><i class="fa fa-exchange"> </i> Converter</a>
                   <a href="http://localhost:3000/" class="btn btn-sm btn-warning" ><i class="fa fa-credit-card"> </i> Transfer</a>
                  
               

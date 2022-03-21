@@ -202,7 +202,7 @@ $_SESSION['start_time'] = time();
               <div class="panel-body">
                  <div class="table-responsive">
                     <?php
-                    $tampil=mysqli_query($konek,"select * from karyawan order by kary_id desc");
+                    $tampil=mysqli_query($konek,"select * from karyawan order by kary_id asc");
                     ?>
                   <table class="table table-bordered table-hover table-striped tablesorter">
                   
@@ -211,7 +211,7 @@ $_SESSION['start_time'] = time();
                         <th>Nama<i class="fa fa-sort"></i></th>
                         <th>Alamat <i class="fa fa-sort"></i></th>
                         <th>Alamat Wallet <i class="fa fa-sort"></i></th>
-                        <th>Gaji <i class="fa fa-sort"></i></th>
+                        <th>Gaji (IDR) <i class="fa fa-sort"></i></th>
                         <th>Golongan <i class="fa fa-sort"></i></th>
                         <th>Aksi <i class="fa fa-sort"></i></th>
                       </tr>
