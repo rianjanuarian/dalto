@@ -31,11 +31,12 @@ var uang_lembur = document.transfer.uang_lembur.value;
 var gaji_utama = document.transfer.gaji_utama.value;
 var total_gaji = document.transfer.total_gaji.value;
 var total_gajiusd = document.transfer.total_gajiusd.value;
+var bonus = document.transfer.bonus.value;
 var sanksi = document.transfer.sanksi.value;
 uang_lembur = ( 50000 ) * jam_lembur;
 document.transfer.uang_lembur.value = Math.floor( uang_lembur );
 
-total_gaji = (gaji_utama - uang_lembur) + (2 * uang_lembur) - (sanksi);
+total_gaji = (gaji_utama - uang_lembur) + (2 * uang_lembur) + (bonus - sanksi) ;
 document.transfer.total_gaji.value = Math.floor( total_gaji );
 }
 </script>
@@ -271,6 +272,10 @@ $data  = mysqli_fetch_array($query);
 <option value="GJ004">GJ004</option>
 </select></td>
       </tr>
+      <tr>
+        <td><label for="bonus">Bonus</label></td>
+        <td><input name="bonus" type="text" class="form-control" id="bonus" required/></td>
+      </tr> 
       <tr>
         <td><label for="sanksi">Sanksi</label></td>
         <td><input name="sanksi" type="text" class="form-control" id="sanksi" required/></td>

@@ -215,7 +215,7 @@ $_SESSION['start_time'] = time();
                  <div class="table-responsive">
                     <?php
                     $tampil=mysqli_query($konek,"SELECT karyawan.kode_kar, karyawan.nama_kar, karyawan.no_rek, karyawan.gaji_utama, tb_gaji.kode_gaji, 
-                    tb_gaji.uang_lembur,tb_gaji.sanksi, tb_gaji.total_gaji,tb_gaji.total_gajiusd, tb_gaji.tgl_transfer, tb_gaji.jam_transfer FROM karyawan, tb_gaji WHERE karyawan.kary_id=tb_gaji.kary_id");
+                    tb_gaji.uang_lembur,tb_gaji.bonus, tb_gaji.sanksi, tb_gaji.total_gaji,tb_gaji.total_gajiusd, tb_gaji.tgl_transfer, tb_gaji.jam_transfer FROM karyawan, tb_gaji WHERE karyawan.kary_id=tb_gaji.kary_id");
                     $total=mysqli_num_rows($tampil); ?>
                   <table class="table table-bordered table-hover table-striped tablesorter">
                   
@@ -225,7 +225,8 @@ $_SESSION['start_time'] = time();
                         <th>Alamat Wallet <i class="fa fa-sort"></i></th>
                         <th>Kode Gaji <i class="fa fa-sort"></i></th>
                         <th>Gaji Utama <i class="fa fa-sort"></i></th>
-                        <th>Uang_lembur <i class="fa fa-sort"></i></th>
+                        <th>Uang lembur <i class="fa fa-sort"></i></th>
+                        <th>Bonus <i class="fa fa-sort"></i></th>
                         <th>Sanksi <i class="fa fa-sort"></i></th>
                         <th>Total gaji <i class="fa fa-sort"></i></th>
                         <th>Total gaji (USD) <i class="fa fa-sort"></i></th>
@@ -242,6 +243,7 @@ $_SESSION['start_time'] = time();
                     <td><?php echo $data['kode_gaji']; ?></td>
                     <td>Rp.<?php echo number_format($data['gaji_utama'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['uang_lembur'],2,",",".");?></td>
+                    <td>Rp.<?php echo number_format($data['bonus'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['sanksi'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['total_gaji'],2,",",".");?></td>
                     <td>USD.<?php echo number_format($data['total_gajiusd'],2,",",".");?></td>

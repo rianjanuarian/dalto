@@ -235,6 +235,8 @@ $_SESSION['start_time'] = time();
                    </table>
                    </div>
                 <div class="text-right">
+                <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-sm btn-warning">Video Tutorial Penggunaan Aplikasi <i class="fa fa-arrow-circle-right"></i></a> -->
+                
                   <a href="tambah.php" class="btn btn-sm btn-warning">Tambah Data Karyawan <i class="fa fa-arrow-circle-right"></i></a>
               
                 </div>
