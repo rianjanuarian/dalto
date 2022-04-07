@@ -33,6 +33,7 @@ var total_gaji = document.transfer.total_gaji.value;
 var total_gajiusd = document.transfer.total_gajiusd.value;
 var bonus = document.transfer.bonus.value;
 var sanksi = document.transfer.sanksi.value;
+
 uang_lembur = ( 50000 ) * jam_lembur;
 document.transfer.uang_lembur.value = Math.floor( uang_lembur );
 
