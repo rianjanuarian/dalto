@@ -134,11 +134,9 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
                ?>
               <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profil</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Pesan Masuk <span class="badge">7</span></a></li>
-                <li><a href="#"><i class="fa fa-gear"></i> Pengaturan </a></li>
+           
                 <li class="divider"></li>
-                <li><a href="../logout.php" onclick="return confirm('Apakah anda akan keluar?');"><i class="fa fa-power-off"></i> Keluar APeK</a></li>
+                <li><a href="../logout.php" onclick="return confirm('Apakah anda akan keluar?');"><i class="fa fa-power-off"></i> Keluar </a></li>
               </ul>
             </li>
           </ul>
@@ -212,7 +210,7 @@ $_SESSION['start_time'] = time();
                         <th>Alamat <i class="fa fa-sort"></i></th>
                         <th>Alamat Wallet <i class="fa fa-sort"></i></th>
                         <th>Gaji (IDR) <i class="fa fa-sort"></i></th>
-                        <th>Golongan <i class="fa fa-sort"></i></th>
+                       
                         <th>Aksi <i class="fa fa-sort"></i></th>
                       </tr>
                      <?php while($data=mysqli_fetch_array($tampil))
@@ -223,7 +221,7 @@ $_SESSION['start_time'] = time();
                     <td><?php echo $data['alamat_kar']; ?></td>
                     <td><?php echo $data['no_rek']; ?></td>
                     <td>Rp.<?php echo number_format($data['gaji_utama'],2,",",".");?></td>
-                    <td><?php echo $data['gol_kar'];?></td>
+                   
                     <td>
                     <a class="btn btn-sm btn-success" href="gaji.php?hal=edit&kd=<?php echo $data['kary_id'];?>"><i class="fa fa-user"></i>Transfer Gaji</a>
                         <a class="btn btn-sm btn-primary" href="edit.php?hal=edit&kd=<?php echo $data['kary_id'];?>"><i class="fa fa-edit"></i> Edit</a>

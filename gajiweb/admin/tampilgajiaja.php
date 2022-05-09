@@ -148,9 +148,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
                ?>
               <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profil</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Pesan Masuk <span class="badge">7</span></a></li>
-                <li><a href="#"><i class="fa fa-gear"></i> Pengaturan </a></li>
+           
                 <li class="divider"></li>
                 <li><a href="../logout.php" onclick="return confirm('Apakah anda akan keluar?');"><i class="fa fa-power-off"></i> Keluar </a></li>
               </ul>

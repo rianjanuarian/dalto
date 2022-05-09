@@ -229,10 +229,7 @@ $_SESSION['start_time'] = time();
         <td><label for="gaji_utama">Gaji Utama</label></td>
         <td><input name="gaji_utama" type="text" class="form-control" id="gaji_utama" placeholder="Gaji Utama" required/></td>
       </tr>
-      <tr>
-        <td><label for="gol_kar">Golongan</label></td>
-        <td><input name="gol_kar" type="text" class="form-control" id="gol_kar" placeholder="Golongan" required/></td>
-      </tr>
+    
       <tr>
         <td><input type="submit" value="Simpan Data"  class="btn btn-sm btn-primary"/>&nbsp;<a href="index.php" class="btn btn-sm btn-primary">Kembali</a></td>
         </tr>

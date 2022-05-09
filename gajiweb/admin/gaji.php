@@ -19,7 +19,9 @@ if (empty($_SESSION['username'])){
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-   
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- Page Specific CSS -->
@@ -152,9 +154,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
                ?>
               <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profil</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Pesan Masuk <span class="badge">7</span></a></li>
-                <li><a href="#"><i class="fa fa-gear"></i> Pengaturan</a></li>
+      
                 <li class="divider"></li>
                 <li><a href="../logout.php" onclick="return confirm('Apakah anda akan keluar?');"><i class="fa fa-power-off"></i> Keluar</a></li>
               </ul>
@@ -239,7 +239,7 @@ $_SESSION['start_time'] = time();
     <script src="script.js"></script>
 
     <!-- konverter eth -->
-
+  
     <!-- hitung lembur karyawan -->
         <div class="col-lg-12">
             <div class="panel panel-primary">
@@ -335,6 +335,7 @@ $data  = mysqli_fetch_array($query);
         
     </table>
     </form>
+   
                    </div>
                 <!-- <div class="text-right">
                   <a href="#"  data-toggle="tooltip" class="tip-bottom" data-original-title="Tooltip Dibawah">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
