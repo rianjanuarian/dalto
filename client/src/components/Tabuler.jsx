@@ -77,24 +77,16 @@ const Tabuler = () => {
                       <tr key={index + 1}>
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center">
-                            <div className="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                className="rounded-full"
-                                src={makeImage(tx.sender)}
-                                width="40"
-                                height="40"
-                                alt="Alex Shatov"
-                              />
-                            </div>
+                          
                             <div className="font-medium text-gray-800">
-                              {faker.name.findName()}
+                              {"Admin"}
                             </div>
                           </div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left">
                             <a
-                              href={`https://ropsten.etherscan.io/address/${tx.sender}`}
+                              href={`https://rinkeby.etherscan.io/address/${tx.sender}`}
                               target="_blank"
                               rel="noreferrer"
                               className="hover:text-blue-500"
@@ -106,7 +98,7 @@ const Tabuler = () => {
                         <td className="p-2 whitespace-nowrap">
                           <div className="text-left">
                             <a
-                              href={`https://ropsten.etherscan.io/address/${tx.receiver}`}
+                              href={`https://rinkeby.etherscan.io/address/${tx.receiver}`}
                               target="_blank"
                               rel="noreferrer"
                               className="hover:text-blue-500"
