@@ -69,7 +69,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">APeK (Aplikasi penggajian Karyawan)</a>
+          <a class="navbar-brand" href="index.html">Aplikasi Penggajian Karyawan</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -236,10 +236,7 @@ $_SESSION['start_time'] = time();
     </table>
     </form>
                    </div>
-                <div class="text-right">
-                  <a href="#"  data-toggle="tooltip" class="tip-bottom" data-original-title="Tooltip Dibawah">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
-              
-                </div>
+                
               </div> 
             </div>
           </div>
