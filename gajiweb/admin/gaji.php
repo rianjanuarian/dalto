@@ -89,7 +89,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Aplikasi penggajian Karyawan)</a>
+          <a class="navbar-brand" href="index.html">Aplikasi penggajian Karyawan</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -186,10 +186,10 @@ $_SESSION['start_time'] = time();
 
         <div class="row">
           <div class="col-lg-12">
-            <h1>Hitung Lembur Karyawan <small>Admin</small></h1>
+            <h1>Hitung Gaji Karyawan <small>Admin</small></h1>
             
             <ol class="breadcrumb">
-              <li class="active"><i class="fa fa-edit"> Hitung Lembur Karyawan</i></li>
+              <li class="active"><i class="fa fa-edit"> Hitung Gaji Karyawan</i></li>
             </ol>
             <table width="900">
             <tr>
@@ -201,7 +201,7 @@ $_SESSION['start_time'] = time();
             <br />
             <div class="alert alert-success alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-             Anda Berada Di Halaman Perhitungan Lembur Karyawan
+             Anda Berada Di Halaman Perhitungan Gaji Karyawan
 
           </div>
         </div>
@@ -244,7 +244,7 @@ $_SESSION['start_time'] = time();
         <div class="col-lg-12">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-edit"></i> Hitung Lembur Karyawan</h3>
+                <h3 class="panel-title"><i class="fa fa-edit"></i> Hitung Gaji Karyawan</h3>
               </div>
               <div class="panel-body">
                  <div class="table-responsive">
