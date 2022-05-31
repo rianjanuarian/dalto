@@ -31,13 +31,13 @@ if (empty($_SESSION['username'])){
 
   /* Select the text field */
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  copyText.setSelectionRange(0, 1000000); /* For mobile devices */
 
    /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyText.value);
 
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert("Berhasil di Salin: " + copyText.value);
 }
 // 1 detik = 1000
 window.setTimeout("waktu()",1000);  
@@ -236,8 +236,9 @@ $_SESSION['start_time'] = time();
                     <tr>
                     <td><?php echo $data['kode_kar'];?></td>
                     <td><?php echo $data['nama_kar']; ?></a></td>
-                    <td><input type="text" value="<?php echo $data['no_rek'];?>" id="myInput" readonly="readonly">
-                    <button onclick="myFunction()">Copy text</button></td> 
+                    <td><?php echo $data['no_rek']; ?></a></td>
+         
+              
                     <td><?php echo $data['kode_gaji']; ?></td>
                     <td>Rp.<?php echo number_format($data['gaji_utama'],2,",",".");?></td>
                     <td>Rp.<?php echo number_format($data['uang_lembur'],2,",",".");?></td>
