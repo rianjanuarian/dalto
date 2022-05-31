@@ -268,9 +268,7 @@ $data  = mysqli_fetch_array($query);
         <td><select name="kode_gaji" name="kode_gaji" id="kode_gaji" class="form-control" required>
 <option></option>
 <option value="GJ001">GJ001</option>
-<option value="GJ002">GJ002</option>
-<option value="GJ003">GJ003</option>
-<option value="GJ004">GJ004</option>
+
 </select></td>
       </tr>
       <tr>
@@ -330,7 +328,7 @@ $data  = mysqli_fetch_array($query);
         <td><input name="jam_transfer" type="text" class="form-control" id="jam_transfer" value="<?php echo "".date("H:i:s").""?>" readonly="readonly"/></td>
       </tr>
       <tr>
-        <td><input type="submit" value="Simpan Data"  class="btn btn-sm btn-primary"/>&nbsp;<a href="index.php" class="btn btn-sm btn-primary">Kembali</a>&nbsp;<a href="http://localhost/dalto/gajiweb/konvertereth/index.html" class="btn btn-sm btn-primary">Converter</a></td>
+        <td><input type="submit" value="Simpan Data"  class="btn btn-sm btn-primary"/>&nbsp;<a href="index.php" class="btn btn-sm btn-primary">Kembali</a>&nbsp;<a href="http://localhost/dalto/gajiweb/konvertereth/index.php" class="btn btn-sm btn-primary">Converter</a></td>
         </tr>
         
     </table>

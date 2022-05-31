@@ -257,7 +257,7 @@ $_SESSION['start_time'] = time();
                    </div>
                 <div class="text-right">
                   <!-- <a href="#" class="btn btn-sm btn-warning" onclick="window.print();return false"><i class="fa fa-print"></i> Cetak Data</a> -->
-                  <a href="http://localhost/dalto/gajiweb/konvertereth/index.html" class="btn btn-sm btn-warning" ><i class="fa fa-exchange"> </i> Converter</a>
+                  <a href="http://localhost/dalto/gajiweb/konvertereth/index.php" class="btn btn-sm btn-warning" ><i class="fa fa-exchange"> </i> Converter</a>
                   <a href="http://localhost:3000/" class="btn btn-sm btn-warning" ><i class="fa fa-credit-card"> </i> Transfer</a>
                  
               
