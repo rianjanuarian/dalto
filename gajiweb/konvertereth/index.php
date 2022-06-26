@@ -33,53 +33,18 @@
             <button id="login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Masuk dengan MetaMask</button>
         </div>
       </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col col-md-6 offset-md-3" id="window">
-                <h4>Swap</h4>
-                <div id="form">
-                    <div class="swapbox">
-                        <div class="swapbox_select token_select" id="from_token_select">
-                            <img class="token_image" id="from_token_img">
-                            <span id="from_token_text"></span>
-                        </div>
-                        <div class="swapbox_select">
-                            <input class="number form-control" placeholder="Jumlah" id="from_amount">
-                        </div>
-                    </div>
-                    <div class="swapbox">
-                        <div class="swapbox_select token_select"  id="to_token_select">
-                            <img class="token_image" id="to_token_img">
-                            <span id="to_token_text"></span>
-                        </div>
-                        <div class="swapbox_select">
-                            <input class="number form-control" placeholder="Jumlah" id="to_amount">
-                        </div>
-                    </div>
-                    <div>Estimasi Gas: <span id="gas_estimate"></span></div>
-                    <button disabled  class="btn btn-large btn-primary btn-block" id="swap_button">
-                        Swap
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal" id="token_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Pilih Token</h5>
-              <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div id="token_list"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <div style="display: flex; justify-content: center; padding: 15px;">
+    <iframe
+      style="--border-radius: 10px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.20); border-radius: var(--border-radius); margin: auto;max-width: 420px"
+      src="https://widget.onramper.com?color=266677&apiKey=pk_test_UqpQ8_F_0ExWtuoKsWUSUma0NwPq0dC9E6S3K4ddjBA0"
+      height="660px"
+      width="482px"
+      title="Onramper widget"
+      frameborder="0"
+      allow="accelerometer; autoplay; camera; gyroscope; payment"
+    >
+    </iframe>
+  </div>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
